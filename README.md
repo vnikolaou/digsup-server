@@ -29,6 +29,7 @@ Due to this design, the back-end application could be scaled properly (eg. with 
 
     ```cd digsup-server```
 2. Build the image:
+
     ```sudo docker-compose build```
     
     ```sudo docker-compose up```
