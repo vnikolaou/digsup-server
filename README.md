@@ -51,4 +51,4 @@ Due to this design, the back-end application could be scaled properly (eg. with 
        {"email":"vnikolaou15@gmail.com","sent":true},
        {"email":"vnikolaou16@gmail.com","sent":true}]
   
-   NOTE: the key 'sent' indicates whether an email has sent to the recipient successfully or not 
+   NOTE: the key 'sent' indicates whether an email has been sent to the recipient successfully or not 
