@@ -35,5 +35,6 @@ Due to this design, the back-end application could be scaled properly (eg. with 
     ```sudo docker-compose up```
 
 3. Open a browser and given that the front-end is running visit the address:
+
     ```http://localhost:8080```
   
