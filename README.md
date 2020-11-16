@@ -30,8 +30,25 @@ Due to this design, the back-end application could be scaled properly (eg. with 
     ```cd digsup-server```
 2. Build the image:
 
+    ```sudo docker-compose build```
+    
     ```sudo docker-compose up```
 
 3. Open a browser and given that the front-end is running visit the address:
+
     ```http://localhost:8080```
+    
+## Process the registered emails via the REST API
+1. Open a new terminal or CLI
+2. Run:
+   
+   ```curl -X PUT  localhost:8081/api/signup/process```
+3. The API will return an array of entries in JSON format. For example:
+
+   ```[{"email":"vnikolaou12@gmail.com","sent":true},
+       {"email":"vnikolaou13@gmail.com","sent":true},
+       {"email":"vnikolaou14@gmail.com","sent":true},
+       {"email":"vnikolaou15@gmail.com","sent":true},
+       {"email":"vnikolaou16@gmail.com","sent":true}]
   
+   NOTE: the key 'sent' indicates whether an email has been sent to the recipient successfully or not 
