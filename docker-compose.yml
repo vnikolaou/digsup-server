@@ -2,9 +2,18 @@ version: "3.8"
 services:
   server:
     build: .
+    container_name: backend
     ports:
       - "8081:8081"
+    networks:
+      - network0 
   mail:
     image: schickling/mailcatcher
     ports:
       - 1080:1080
+    networks:
+      - network0 
+
+networks:
+  network0:
+    name: net0
